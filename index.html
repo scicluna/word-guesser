@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess</title>
+    <link rel="stylesheet" href="./styles.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Guessing Game!</h1>
+        <button id="start-game">Start Game!</button>
+    </header>
+    <main>
+        <div id="game">
+            <p id="word"></p>
+        </div>
+        <div id="results">
+            <div id="grid">
+                <p class="cell">Wins:</p>
+                <p class="cell" id="wins"></p>
+                <p class="cell">Losses:</p>
+                <p class="cell"id="losses"></p>
+            </div>
+            <div id="times">
+                <h2 id="timer">10</h2>
+                <button id="reset">Reset All</button>
+            </div>
+        </div>
+    </main>
+    <div id="logs">
+        <ul id="log-area"></ul>
+    </div>
+    
+
+    <script src="./script.js" type ="module"></script>
+</body>
+</html>

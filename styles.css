@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgba(255, 255, 255, 0.595)
+}
+body{
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: space-ar;
+    width:100%;
+}
+
+header {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(4, 33, 42, 0.817);
+    padding-bottom: 1%;
+}
+
+header > button {
+    width: 10%;
+    background-color: rgba(4, 33, 42, 0.817);
+    border: solid 2px;
+    border-radius: 15px;
+}
+
+#game {
+    display:flex;
+    height: 20vh;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(4, 33, 42, 0.817);
+    font-size:50px;
+    letter-spacing: 15px;
+    margin: 15px;
+    border:15px solid;
+    border-radius: 15px;
+}
+
+#results {
+    display: flex;
+    background-color: rgba(4, 33, 42, 0.817);
+    width: 50%;
+    margin: 15px;
+    border:15px solid;
+    border-radius: 15px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    width:30vw;
+}
+
+.cell{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+#times {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+#times h2{
+    font-size:100px;
+}
+
+#times button {
+    width: 80px;
+    background-color: rgba(4, 33, 42, 0.817);
+    border: solid 2px;
+    border-radius: 15px;
+    font:15px;
+}
+
+#logs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+}
+
+#logs ul {
+    list-style-type: none;
+    line-height: 40px;
+}
