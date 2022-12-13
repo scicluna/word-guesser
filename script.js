@@ -18,7 +18,7 @@ let timerInterval;
 let goodEnuff;
 let randomArray;
 let logs = JSON.parse(localStorage.getItem("logs"))
-displayLogs();
+
 if (!wins){
     wins = 0
 }
@@ -28,7 +28,7 @@ if (!losses){
 
 if (!logs){
     logs = []
-}
+} else displayLogs();
 
 //Displaying wins/losses from last time
 winCount.innerText = wins
@@ -170,7 +170,9 @@ function resetState(){
     endFlag = false
     wordSpot.setAttribute("style", "letter-spacing: 15px")
     logArea.textContent = ''
+    if (logs){
     displayLogs();
+    }
 }
 
 //after a game ends, save the results to local storage
